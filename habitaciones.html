@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="carousel.js"></script>
+    <title>Habitaciones</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper brown darken-1">
+            <a href="index.html" class="brand-logo brown darken-1">Hotel AMQ</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="brown darken-1" href="habitaciones.html">Hospedaje</a></li>
+                <li><a class="brown darken-1" href="iniciar.html">Inicia Sesión</a></li>
+                <li><a class="brown darken-1" href="registro.html">Registrate</a></li>
+                <li><a class="brown darken-1" href="index.html">Inicio</a></li>
+            </ul>
+        </div>
+    </nav>
+    <center>
+        <h3>Disfruta de nuestras instalaciones!</h3>
+    </center>
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="./img/matri-delux.jpeg"></a>
+        <a class="carousel-item" href="#two!"><img src="./img/suit-doble.jpeg"></a>
+        <a class="carousel-item" href="#three!"><img src="./img/villa.jpeg"></a>
+    </div>
+    <script>
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
+    var instance = M.Carousel.getInstance(elem);
+  });
+    </script>
+
+</body>
+
+</html>
