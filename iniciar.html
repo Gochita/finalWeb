@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link rel="stylesheet" href="estilo.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Inicia Sesión</title>
@@ -27,21 +27,50 @@
             </ul>
         </div>
     </nav>
-    <div class="row">
-        <div class="col s12 m6">
-            <div class="card orange lighten-5">
-                <div class="card-content orange darken-1 white-text">
-                    <span class="card-title">Bienvenido</span>
-                    <p>Ingresa tu correo <input type="email"> </p>
-                    <p>Ingresa password <input type="password"> </p>
-                </div>
-                <div class="card-action">
-                    <a href="perfil.html">Entrar</a>
-                    <a href="registro.html">No tienes cuenta?</a>
+    <div>
+        <h5 class="center-align">Registrate!</h5>
+    </div>
+
+    <center>
+        <div class="container">
+            <div class="row">
+                <form class="col s12">
+                    <center>
+                        <div class="input-field col s6">
+                            <input placeholder="example@gmail.com" id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                            <span class="helper-text" data-error="email invalido" data-success="right"></span>
+                        </div>
+                    </center>
+                </form>
+            </div>
+            <div class="row">
+                <form class="col s12">
+                    <center>
+                        <div class="input-field col s6">
+                            <input placeholder="********" id="password" type="password" class="validate" maxlength="8"
+                                minlength="8">
+                            <label for="password">Password</label>
+                            <span class="helper-text" data-error="minimo 8 caracteres" data-success=""></span>
+                        </div>
+                    </center>
+                </form>
+            </div>
+        </div>
+        <a id="btn1" class="waves-effect waves-light btn" href="perfil.html">Entrar</a>
+        <a id="btn2" class="waves-effect waves-light btn" href="registro.html">No tengo cuenta</a>
+
+    </center>
+
+    <footer id="copyright" class="page-footer brown darken-1">
+        <div class="container">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2022 tamagochita
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 
 </body>
 
